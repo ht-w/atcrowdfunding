@@ -1,0 +1,23 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: crowd-pay
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.189.129
+    port: 8888
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+# 在配置文件中设置支付宝公钥等信息
+paypal:
+  mode: sandbox
+  client:
+    app: Ab0EdhllssvEGmC_RNoKvbLIg_K0i0bKwBM4egW4tXVfSzoSUqBtwKiRWTw9xYh_okkwsYBPrqtAJa7x
+    secret: EOm9Mrl2SQBZmHKNFFiYfOJm4YVdrs5ypfdG-ijvwCXMWPyF4mRNiWAHE9MQ4mbFMAsp0-Fl9Dtvfq-u

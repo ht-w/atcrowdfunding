@@ -1,0 +1,25 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.189.129
+    port: 8888
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+aliyun:
+  oss:
+    endpoint: oss-ap-southeast-3.aliyuncs.com
+    keyId: LTAI5tNjdQpVzqFbV95Afsus
+    keySecret: Slw6325hsZ4z21nvWvyQNDKlwfeBin
+    bucketName: project-crowd-test
+    bucketDomain: http://project-crowd-test.oss-ap-southeast-3.aliyuncs.com

@@ -1,0 +1,23 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: crowd-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.189.129
+    port: 8888
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+short:
+  message:
+    apiKey: df1f08c6
+    apiSecret: qKKpCk4lAbVuGQfx
+    host: 尚筹网
+

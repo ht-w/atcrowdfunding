@@ -1,0 +1,21 @@
+server:
+  port: 3000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+spring:
+  application:
+    name: crowd-redis
+  redis:
+    host: 192.168.189.129
+    port: 8888
+    database: 0
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
