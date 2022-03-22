@@ -19,7 +19,7 @@ eureka:
 aliyun:
   oss:
     endpoint: oss-ap-southeast-3.aliyuncs.com
-    keyId: LTAI5tNjdQpVzqFbV95Afsus
-    keySecret: Slw6325hsZ4z21nvWvyQNDKlwfeBin
+    keyId: 
+    keySecret: 
     bucketName: project-crowd-test
     bucketDomain: http://project-crowd-test.oss-ap-southeast-3.aliyuncs.com
